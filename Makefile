@@ -18,4 +18,4 @@ associate_commits:
 
 upload_sourcemaps:
 	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(VERSION) \
-		upload-sourcemaps --url-prefix "~/js" --rewrite --validate dist/js
+		upload-sourcemaps --url-prefix "~/js" --validate dist/js
